@@ -1,0 +1,20 @@
+/opt/open-postagem-v2/
+│
+├── core/                # Projeto Django
+├── users/               # Aplicação de usuários
+├── analysis/            # Sistema de Análise de Documentos
+├── convert/             # Sistema de Conversão TAR.GZ → PDF
+├── post/                # Sistema de Postagem
+├── templates/           # Termos, relatórios, etc
+├── media/               # Arquivos de upload temporário
+├── log/
+├── venv/
+├── manage.py
+├── start_server.ps1     # Já está pronto
+└── celery.py            # Configuração do Celery
+
+##########
+python manage.py startapp authentication
+python manage.py startapp analysis
+python manage.py startapp convert
+python manage.py startapp post

@@ -1,0 +1,20 @@
+# LINK GERAR CHAVE
+# https://djecrety.ir/
+
+# LINK GITIGNORE
+# https://www.toptal.com/developers/gitignore/api/django
+
+# CONFIGIRANDO AMBIENTE
+python -m venv venv
+
+venv\Scripts\activate
+
+python.exe -m pip install --upgrade pip
+pip install django djangorestframework djangorestframework-simplejwt python-decouple drf-yasg
+pip install djangorestframework-simplejwt
+pip install django-cors-headers
+pip install celery redis
+pip install psycopg2-binary
+
+# Criando Projeto
+django-admin startproject core .

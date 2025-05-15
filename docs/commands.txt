@@ -1,0 +1,10 @@
+
+# Verificar se ainda estão ativos:
+Get-Process python, celery -ErrorAction SilentlyContinue
+
+# 1. Matar todos os processos python e celery:
+Get-Process | Where-Object { $_.Name -like "*python*" -or $_.Name -like "*celery*" } | Stop-Process -Force
+
+# 2. Matar por PID específico:
+Stop-Process -Id 20824 -Force  # celery
+Stop-Process -Id 3988 -Force   # python (talvez manage.py)
